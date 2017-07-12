@@ -28,7 +28,7 @@ describe 'navigate' do
   end
 
   describe 'new' do
-    it 'has a link from the home page' do
+    it 'has a link from the homepage' do
       visit root_path
 
       click_link("new_post_from_nav")
@@ -41,7 +41,7 @@ describe 'navigate' do
       @post = FactoryGirl.create(:post)
       visit posts_path
 
-      click_link("delete_post_#{@post.id}from_index")
+      click_link("delete_post_#{@post.id}_from_index")
       expect(page.status_code).to eq(200)
     end
   end

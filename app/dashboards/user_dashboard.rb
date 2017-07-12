@@ -20,7 +20,6 @@ class UserDashboard < Administrate::BaseDashboard
 
   COLLECTION_ATTRIBUTES = [
     :posts,
-    :id,
     :email,
     :type
   ].freeze
