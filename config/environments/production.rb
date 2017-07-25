@@ -1,4 +1,5 @@
-Rails.application.configure d
+Rails.application.configure do
+  
   config.cache_classes = true
   config.eager_load = true
   config.consider_all_requests_local       = false
@@ -21,7 +22,6 @@ Rails.application.configure d
     logger.formatter = config.log_formatter
     config.logger = ActiveSupport::TaggedLogging.new(logger)
   end
-
 
   config.active_record.dump_schema_after_migration = false
 end
